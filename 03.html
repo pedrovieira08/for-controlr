@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: MAIOR NÚMERO
+    Faça um programa que peça ao usuário para informar cinco números.
+    No final, apresente o maior número informado pelo usuário.
+    */
+
+    //ENTRADA
+    const num1 =Number(prompt(`informe o primeiro numero`));
+    const num2 =Number(prompt(`informe o segundo numero`));
+    const num3 =Number(prompt(`informe o terceiro numero`));
+    const num4 =Number(prompt(`informe o quarto numero`));
+    const num5 =Number(prompt(`informe o quinto numero`));
+    let listaNumero = [];
+    listaNumero.push(num1,num2,num3,num4,num5);
+    let numeroMaior = listaNumero[0];
+    
+    //PROCESSAMENTO
+    if(isNaN(num1) ||isNaN(num2) ||isNaN(num3) ||isNaN(num4) ||isNaN(num5)){
+        alert(`informe um numero valido.`);
+    }else{
+    for(contador = 1; contador < listaNumero.length; contador++){
+        if(listaNumero [contador] > numeroMaior){
+            numeroMaior = listaNumero[contador];
+        }
+    }
+
+    
+    //SAÍDA
+    document.write(` o maior numero é: ${numeroMaior}.`);
+    }
+</script>

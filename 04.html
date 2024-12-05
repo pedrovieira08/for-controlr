@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: ÍMPARES ATÉ 50
+    Faça um programa que apresente na tela os números ímpares de 1 até 50.
+    */
+
+    //ENTRADA
+    let impares = [];
+
+    //PROCESSAMENTO
+    for (contador = 1; contador <= 50; contador++){
+        if(contador % 2 !== 0 ){
+            impares.push(contador);
+        }
+    }
+
+
+    //SAÍDA
+    document.write(`os numero impares do 1 até o 50 são: ${impares.join(", ")}.`);
+
+</script>
