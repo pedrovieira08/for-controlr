@@ -6,14 +6,19 @@
     */
 
     //ENTRADA
+    let populacao = 80000; // População inicial
+    const taxaCrescimento = 1.03; // Fator de crescimento anual (3%)
+    const populacaoAlvo = 200000; // População alvo
+    let anos = 0; // Contador de anos
 
     
     //PROCESSAMENTO
-    for(contador = 80000; contador <= 200000; contador++){
-       
+    for(contador = populacao; contador <= populacaoAlvo; contador*=taxaCrescimento){
+        anos++;
     }
 
     
     //SAÍDA
+    document.write(`serão necessarios ${anos} anos para chegar a 200000. `);
 
 </script>
